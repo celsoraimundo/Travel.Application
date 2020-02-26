@@ -1,0 +1,10 @@
+﻿@page
+@model Travel.Application.Web.Pages.ToDoRazorPage.IndexModel
+
+<h2>To Do Items (Razor Page)</h2>
+<ul>
+    @foreach (var item in Model.Viagens)
+    {
+        <li>@item.NomePassageiro<br />@item.DataPartida</li>
+    }
+</ul>

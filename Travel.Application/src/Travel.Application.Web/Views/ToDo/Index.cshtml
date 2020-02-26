@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "ToDo List";
+}
+@model IEnumerable<Travel.Application.Web.ApiModels.ViagemDTO>
+<h2>To Do Items (MVC View)</h2>
+<ul>
+@foreach (var item in Model)
+{
+    <li>@item.NomePassageiro<br/>@item.DataPartida</li>
+}
+</ul>
